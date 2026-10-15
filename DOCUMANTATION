@@ -1,0 +1,62 @@
+AI-Powered Workplace Productivity Assistant
+A practical, ethical AI assistant that automates 5 core workplace tasks:
+
+Email Generation - Professional emails from bullet points
+Meeting Summarization - Summaries, action items, decisions from transcripts
+Task Planning - Breaks goals into prioritized tasks with timelines
+Research Assistance - Structured research briefs with sources framework
+Chatbot Interaction - Context-aware workplace Q&A chatbot
+Built with Python, Streamlit, and prompt engineering best practices.
+
+🚀 Live Demo Features
+This repo includes a fully functional Streamlit app (app.py) that you can run locally or deploy to Streamlit Cloud.
+
+🛠️ Tech Stack
+Frontend: Streamlit
+AI Models: OpenAI GPT-4o / Gemini / Any LLM via API (prompt-engineered, model-agnostic)
+Prompt Engineering Techniques Used: Role prompting, Few-shot, Chain-of-Thought, Structured Output, Constraints
+📁 Project Structure
+AI-Productivity-Assistant/
+├── app.py - Main Streamlit Application
+├── requirements.txt
+├── README.md
+├── prompts/
+│   ├── email_prompts.json
+│   ├── meeting_prompts.json
+│   ├── task_prompts.json
+│   └── research_prompts.json
+├── examples/
+│   └── sample_meeting_transcript.txt
+└── ETHICS.md
+⚙️ Getting Started
+1. Create GitHub Repo
+Go to github.com -> New Repository
+Name: AI-Productivity-Assistant
+Public, Add README unchecked (we have one)
+Create and upload these files.
+2. Run Locally
+pip install -r requirements.txt
+streamlit run app.py
+3. Set your API Key (Optional for demo)
+The app works in DEMO mode without an API key using templated logic. To use real LLMs:
+Set env variable: OPENAI_API_KEY or add to Streamlit secrets.
+
+🧠 Prompt Engineering Showcase
+Each module uses a carefully engineered prompt. See /prompts folder.
+
+Example - Email Prompt:
+
+Role: "You are an executive communication assistant"
+Context + Tone + Constraints
+Few-shot example
+Structured output
+✅ Responsible & Ethical AI
+See ETHICS.md - covers bias mitigation, privacy, transparency, human-in-the-loop.
+
+🎥 For Submission
+Record a 2-min Loom showing:
+
+Email generation
+Meeting summary from sample transcript
+Task planner
+Built for [Your Program Name] - 2026
