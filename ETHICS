@@ -1,0 +1,7 @@
+Responsible & Ethical AI Use
+Transparency: The assistant clearly labels AI-generated content. Every email/summary has a footer option: "Drafted with AI - Please review".
+Privacy: No meeting data is stored. Transcripts are processed in-memory only. No PII is sent to external models without consent.
+Bias Mitigation: Prompts include instructions: "Use inclusive, unbiased language. Avoid assumptions about gender, role, or seniority."
+Human-in-the-Loop: Critical actions (sending email, final task assignment) require human approval.
+Hallucination Control: Research assistant prompt forces "If unsure, say 'I don't have verified information' and suggest search queries instead of inventing facts."
+Sustainability: Model usage is optimized with concise prompts to reduce token waste.
